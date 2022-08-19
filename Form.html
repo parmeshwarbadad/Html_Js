@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/action.php">
+        <p>Name:<input type="text" placeholder="Enter your Name">
+        <p>User Name<input type="text" placeholder="Enter your user Name">
+        <p>password<input type="password" placeholder="Enter password">
+        <br>
+        <br>
+
+
+        <label for="101">
+        <input type="radio" value="Class XI" name="Class" id="101">Class XI
+        </label>
+        <label for="102">
+        <input type="radio" value="Class XII" name="Class" id="102">Class XII
+        </label>
+        <br>
+        <br>
+
+        <h3>Select for subject</h3>
+        
+        <label for="Math">
+        <input t  ype="checkbox" value="Math" name="Subject" id="101">Math<br>
+        <input type="checkbox" value="Phy" name="Subject" id="102">Physics<br>
+        <input type="checkbox" value="Chemistry" name="Subject" id="103">Chemistry<br>
+        <input type="checkbox" value="Bio" name="Subject" id="104">Biology<br>
+        </label>
+
+        <textarea name="Feedback" placeholder="Please give your valuable feedback hare"rows=5>Feedback
+        </textarea>
+
+        <!--Drpodown list-->
+        <br>
+        <select name="City">
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Delhi">Delhi</option>
+
+        </select>
+        <br>
+        <input type="submit" value="submit">
+
+
+    </form>
+</body>
+</html>

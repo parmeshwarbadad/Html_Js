@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    var a;
+    console.log(typeof a);
+
+    a=10;
+    console.log(typeof a);
+
+    a='deepa';
+    console.log(typeof a);
+
+    a=true;
+    console.log(typeof a);
+
+    console.log(10=="10"); // compare data
+    console.log(10==="10"); //compare data + data typy
+
+
+    console.log(8==9 && 6==6);
+    console.log(8>=4 && "Deepa");
+
+    console.log(8<=4 && 23);
+
+    for(var i=1;i<=10;i++)
+    {
+        if(i%3==0)
+        console.log(i);
+    }
+
+    var a=10;
+    var b=20;
+    var add=a+b;
+    var prod=a*b;
+
+    console.log("Addition=" + add + "Product= " +prod);
+    document.write(`Additoin=${add} product=${prod}`);
+
+    alert("welcome");
+    var b=prompt("Enter a number");
+    document.write("square"+b*b);
+    var d=confirm("Do you want to continew");
+    alert(d);
+
+    if(confirm("Do you want to continew"));
+    alert(d);
+
+    for(var ch=65;ch<90;ch++)
+    {
+        console.log(String.fromCharCode(ch)); // ascii to char
+    }
+
+    var str="c";
+    console.log(str.charCodeAt(0));
+
+
+    var x=[1,2,3,4,5,"Deepa",true,9,8];
+    console.log(x);
+
+    for(var i=x.length-1;i>=0;i--)
+    {
+        console.log(x[i]);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

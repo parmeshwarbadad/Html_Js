@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        var e1={"id":101,"name":"Kunal","display":function(a,b,c)
+        {
+           console.log(this);
+           console.log("ID:"+this.id+",Name:"+this.name+",a="+a+ ",b="+b+ ",c="+c);
+            
+        }
+    };
+    var s2={"id":1001,"name":"Shushant"};
+    var d1=e1.display;
+    d1.call(s2,10,20,30);
+
+    var arr=[45,67,89];
+    d1.apply(s2,arr);
+
+    var f2=d1.bind(s2);
+    f2(23,56,58);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

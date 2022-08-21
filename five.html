@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript">
+        function Add() {
+            var data = "";
+            data = data + "Name:" + document.getElementById("fname").value;
+            var arr = document.getElementsByName("ck1");
+            console.log(arr);
+            data = data + "<br> Hobbies:"
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i].checked) {
+                    data = data + arr[i].value;
+                }
+            }
+
+            var Gender = document.getElementsByName("r1");
+            data = data + "<br> Gender:;"
+            for (var i = 0; i < Gender.length; i++) {
+                if (Gender[i].checked) {
+                    data = data + Gender[i].value;
+                    break;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <br>
+        name:<input type="text" id="fname"><br>
+        Hobby:
+        <input type="checkbox" name="ck1" value="Reading" > Reading
+        <input type="checkbox" name="ck1" value="cricket"> Cricket
+        <input type="checkbox" name="ck1" value="Music"> Music
+        <br>
+        Gender:<input type="radio" name="r1" value="Male">Male
+        <input type="radio" name="r1" value="Female">Female
+        <br>
+        City:<select id="city">
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Nashik">Nashik</option>
+
+        </select>
+        <br>
+        <input type="button" value="Add" oneclick="Add()">
+        <div id="id"></div>
+    </form>
+
+</body>
+
+</html>

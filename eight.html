@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title></title>
+    <script type="text/javascript">
+        function Stud(sid,sname,per)
+        {
+            this.rollno=sid;
+            this.studentname=sname;
+            this.percent=per;
+        }
+        Stud.prototype.display=function()
+        {
+            console.log("rollno"+this.rollno+ "Name:"+this.studentname +"Percentage:" +this.percent);
+        }
+        var ob2=new Stud(2,"Sapna",98);
+        var ob3=new Stud(3,"Jyoti",98);
+        ob2.display();
+        ob3.display();
+        console.log(ob2);
+        console.log(ob3); 
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

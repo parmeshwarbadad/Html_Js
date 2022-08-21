@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //object creation by litrel
+        var b={"sid":101,"sname":"Param","percent":99};
+
+
+        function Student(sid,sname,per)
+        {
+            var ob={};
+            ob.rollno=sid;
+            ob.studentname=sname;
+            ob.percent=per;
+            return ob;
+        }
+        var ob1=Student(1,"Param",98);
+
+        //object creation by constructor
+        function Stud(sid,sname,per)
+        {
+            this.rollno=sid;
+            this.studentname=sname;
+            this.percent=per;
+        }
+        var ob2=Stud(2,"Arjun",100);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
